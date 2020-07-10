@@ -1,0 +1,4 @@
+// WARNING THIS ONLY WORKS ON https://orteil.dashnet.org/cookieclicker/ NOT http://orteil.dashnet.org/cookieclicker/v10466/ WILL ADD ONE FOR THAT SOON!!!!
+var Menu = document.createElement('div');
+Menu.innerHTML=('<button onclick="Game.cookies=(Infinity);">Infinite Cookies</button><button onclick="Game.cookie=(129338);">Cookies</button><p>Go To My TAMPERMONKEY on Lapide!</p>');
+document.querySelector("#topBar").insertBefore(Menu, document.querySelector("#topBar").firstChild);// sort code
