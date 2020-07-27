@@ -1,6 +1,6 @@
 // Works With ONLY Original.
 var Menu1 = document.createElement('div');
-Menu1.innerHTML=('<button id="cookiefarming" onclick="">Cookies!</button>');
+Menu1.innerHTML=('<button id="cookiefarming" onclick="Game.Earn(100000);">Cookies!</button>');
 var custombutton = document.createElement('div');
 var RemoveCustombuttons = document.createElement('div');
 custombutton.style.height=('32px');
