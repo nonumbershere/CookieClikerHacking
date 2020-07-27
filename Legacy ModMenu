@@ -1,0 +1,17 @@
+// Works With ONLY Original.
+var Menu1 = document.createElement('div');
+Menu1.innerHTML=('<button id="cookiefarming" onclick="">Cookies!</button>');
+var custombutton = document.createElement('div');
+var RemoveCustombuttons = document.createElement('div');
+custombutton.style.height=('32px');
+document.querySelector("#topBar > div:nth-child(1)").prepend(custombutton);
+custombutton.innerHTML=('<div id="MenuHackButton" class="button selected">Hack</div>');
+RemoveCustombuttons.innerHTML=('<div id="MenuHackButton" class="button selected">Remove Hack</div>');
+document.querySelector("#MenuHackButton").addEventListener ('click', function() {
+  document.querySelector("#comments > div.separatorBottom").prepend(Menu1)
+   custombutton.replaceWith(RemoveCustombuttons);
+});
+RemoveCustombuttons.addEventListener ('click', function() {
+  Menu1.remove();
+  RemoveCustombuttons.replaceWith(custombutton);
+});
